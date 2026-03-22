@@ -154,7 +154,7 @@ To edit the actual `system.img` or similar, follow these instructions to mount a
 
 
 
-Navigate to the directory where you downloaded `6315\_1.zip` and open the terminal window there.
+Navigate to the directory where you downloaded `6315_1.zip` and open the terminal window there.
 
 
 
@@ -260,7 +260,7 @@ Now that we have the unsigned zip, move it to the same directory as the `signapk
 
 # Sign the zip.
 
-java -jar signapk.jar 6315\_12.zip 6315_1.zip
+java -jar signapk.jar 6315_12.zip 6315_1.zip
 
 
 
