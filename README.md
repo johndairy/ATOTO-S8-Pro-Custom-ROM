@@ -260,7 +260,7 @@ Now that we have the unsigned zip, move it to the same directory as the `signapk
 
 # Sign the zip.
 
-java -jar signapk.jar 6315_12.zip 6315_1.zip
+java -jar signapk.jar certificate.pem key.pk8 6315_12.zip 6315_1.zip
 
 
 
