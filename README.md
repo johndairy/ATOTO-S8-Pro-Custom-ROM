@@ -160,9 +160,13 @@ Navigate to the directory where you downloaded `6315_1.zip` and open the termina
 
 ```bash
 
+# Make a new directory for the unzipped contents.
+
+mkdir 6315_1
+
 # Unzip the file.
 
-unzip 6315_1.zip
+unzip 6315_1.zip 6315_1
 
 ```
 
