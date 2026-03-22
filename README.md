@@ -1,4 +1,4 @@
-# ATOTO S8 Pro Custom ROM Install Instructions
+# ATOTO S8 Pro Custom ROM Install
 
 
 
@@ -26,7 +26,7 @@ Thanks to the long hours spent by [Shunhax](https://xdaforums.com/t/rooting-atot
 
 
 
-**Step 3:** On the ATOTO, head to settings and factory reset the device.
+**Step 3:** On the ATOTO, head to settings and factory data reset the device.
 
 
 
@@ -50,7 +50,7 @@ Thanks to the long hours spent by [Shunhax](https://xdaforums.com/t/rooting-atot
 
 * **Custom Boot Animation added for additional Flair.**
 
-* **Fully Decompressed image files for easy customization.**
+* **Fully Decompressed `.img` files for easy customization.**
 
 
 
