@@ -6,67 +6,67 @@ Welcome!
 
 
 
-> \*\*DISCLAIMER!!!\*\* This is NOT an official update, nor is it endorsed or anyhow affiliated with ATOTO. While flashing this update is considered stable from my tests, it is not guaranteed to work for everyone. These risks must be considered! I am not liable for any damage done to your device!
+> **DISCLAIMER!!!** This is NOT an official update, nor is it endorsed or anyhow affiliated with ATOTO. While flashing this update is considered stable from my tests, it is not guaranteed to work for everyone. These risks must be considered! I am not liable for any damage done to your device!
 
 > 
 
-> \*\*If you agree to the above statements, proceed.\*\*
+> **If you agree to the above statements, proceed.**
 
 
 
-\## INSTALLATION
+## INSTALLATION
 
 
 
-\*\*Step 1:\*\* Download the required files found in the \[Releases](../../releases) page: `6315\_1.zip`, `lsec6315update`, and `AllAppUpdate.bin`.
+**Step 1:** Download the required files found in the [Releases](../../releases) page: `6315_1.zip`, `lsec6315update`, and `AllAppUpdate.bin`.
 
 
 
-\*\*Step 2:\*\* Grab a 32GB microSD card formatted as FAT32, and copy those three files to the root of the card.
+**Step 2:** Grab a 32GB microSD card formatted as FAT32, and copy those three files to the root of the card.
 
 
 
-\*\*Step 3:\*\* On the ATOTO, head to settings and factory reset the device.
+**Step 3:** On the ATOTO, head to settings and factory reset the device.
 
 
 
-\*\*Step 4:\*\* After the ATOTO resets, insert your microSD card and wait for a few seconds. A dialogue asking for a firmware update will appear. Click \*\*Start\*\*.
+**Step 4:** After the ATOTO resets, insert your microSD card and wait for a few seconds. A dialogue asking for a firmware update will appear. Click **Start**.
 
 
 
-\*\*Step 5:\*\* Enjoy! :)
+**Step 5:** Enjoy! :)
 
 
 
-\## FEATURES
+## FEATURES
 
 
 
-\* \*\*Adds Root access through \[Magisk](https://github.com/topjohnwu/Magisk) out of the box.\*\*
+* **Adds Root access through [Magisk](https://github.com/topjohnwu/Magisk) out of the box.**
 
-\* \*\*Fully De-Bloated, with all potential spyware removed.\*\*
+* **Fully De-Bloated, with all potential spyware removed.**
 
-\* \*\*Default Android Launcher and features restored.\*\*
+* **Default Android Launcher and features restored.**
 
-\* \*\*Custom Boot Animation added for additional Flair.\*\*
+* **Custom Boot Animation added for additional Flair.**
 
-\* \*\*Fully Decompressed image files for easy customization.\*\*
-
-
-
-\## COMPATIBILITY
+* **Fully Decompressed image files for easy customization.**
 
 
 
-This update is intended for the ATOTO S8 Pro, but other devices may be compatible. \*\*TEST AT YOUR OWN RISK!!\*\*
+## COMPATIBILITY
 
 
 
-\---
+This update is intended for the ATOTO S8 Pro, but other devices may be compatible. **TEST AT YOUR OWN RISK!!**
 
 
 
-\## DEVELOPMENT
+---
+
+
+
+## DEVELOPMENT
 
 
 
@@ -74,35 +74,33 @@ If you want to dive into customizing this update yourself, I've tried to take a 
 
 
 
-\### Prerequisites
+### Prerequisites
 
 
 
 ```bash
 
-\# Install the latest version of Java 
+# Install the latest version of Java 
 
 sudo apt install default-jre
 
 ```
 
-Download `SignAPK.jar` from \[Techexpertize](https://github.com/techexpertize/SignApk).
-
-&#x20;
+Download `SignAPK.jar` from [Techexpertize](https://github.com/techexpertize/SignApk).
 
 After that, you should be ready to start!
 
 
 
-\---
+---
 
 
 
-\### Editing `AllAppUpdate.bin`
+### Editing `AllAppUpdate.bin`
 
 
 
-To add or remove apps to the preinstall list, you will find that in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unzipping. Fortunately, due to the incredible work of \[Eliminater74](https://github.com/Eliminater74/atoto\_firmware\_downloader), I was able to extract the password to the file.
+To add or remove apps to the preinstall list, you will find that in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unzipping. Fortunately, due to the incredible work of [Eliminater74](https://github.com/Eliminater74/atoto_firmware_downloader), I was able to extract the password to the file.
 
 
 
@@ -112,7 +110,7 @@ Open the terminal in the directory that contains the `AllAppUpdate.bin` to unzip
 
 ```bash
 
-\# Unzip the AllAppUpdate.bin with the password.
+# Unzip the AllAppUpdate.bin with the password.
 
 unzip -P 048a02243bb74474b25233bda3cd02f8 AllAppUpdate.bin
 
@@ -130,25 +128,25 @@ To re-zip the files into the `.bin` file, open the extracted `AllAppUpdate` fold
 
 ```bash
 
-\# Remove the old AllAppUpdate.bin.
+# Remove the old AllAppUpdate.bin.
 
 rm ../AllAppUpdate.bin
 
 
 
-\# Re-zip the injected APKs into AllAppUpdate.bin.
+# Re-zip the injected APKs into AllAppUpdate.bin.
 
-zip -0 -r -P 048a02243bb74474b25233bda3cd02f8 ../AllAppUpdate.bin \*
+zip -0 -r -P 048a02243bb74474b25233bda3cd02f8 ../AllAppUpdate.bin *
 
 ```
 
 
 
-\---
+---
 
 
 
-\### Editing System Images
+### Editing System Images
 
 
 
@@ -162,9 +160,9 @@ Navigate to the directory where you downloaded `6315\_1.zip` and open the termin
 
 ```bash
 
-\# Unzip the file.
+# Unzip the file.
 
-unzip 6315\_1.zip
+unzip 6315_1.zip
 
 ```
 
@@ -178,77 +176,77 @@ To make changes, mount any one of the `.img` files using these commands.
 
 ```bash
 
-\# Make a directory to mount the image in.
+# Make a directory to mount the image in.
 
-mkdir img\_mount\_dir
-
-
-
-\# Mount an .img there.
-
-sudo mount system.img img\_mount\_dir
+mkdir img_mount_dir
 
 
 
-\# Change directory to the image
+# Mount an .img there.
 
-cd img\_mount\_dir
-
-
-
-\# NOTE: For some files, you may need to change permissions to the root:root user so the OS reads it.
-
-```
+sudo mount system.img img_mount_dir
 
 
 
-> \*\*NOTE:\*\* When copying large amounts of files to the image, you might need to expand the image size. This is beyond the scope of this guide, so if you need to do that, you will need to find another source. If you do make any changes to the sizes of any of the images, make sure to update the byte sizes in `dynamic\_partitions\_op\_list` found in the `6315\_1` directory. Also note that the maximum sum for the dynamic partitions size is 4.0GB.
+# Change directory to the image
+
+cd img_mount_dir
 
 
 
-After you are done editing, change directories back to the main `6315\_1` directory and enter these commands to unmount the image.
-
-
-
-```bash
-
-\# Unmount the .img and remove the img\_mount\_dir directory
-
-sudo umount img\_mount\_dir
-
-rm -rf img\_mount\_dir
+# NOTE: For some files, you may need to change permissions to the root:root user so the OS reads it.
 
 ```
 
 
 
-\### Recompressing and Signing
+> **NOTE:** When copying large amounts of files to the image, you might need to expand the image size. This is beyond the scope of this guide, so if you need to do that, you will need to find another source. If you do make any changes to the sizes of any of the images, make sure to update the byte sizes in `dynamic_partitions_op_list` found in the `6315_1` directory. Also note that the maximum sum for the dynamic partitions size is 4.0GB.
 
 
 
-After this has been done, you will need to recompress the directory and sign it using the `signapk.jar` from Techexpertize. As far as I'm aware, the ATOTO is only looking for \*something\* to be there as some sort of a signature, so it shouldn't need to be anything crazy. 
-
-
-
-First, you will need to re-zip the `6315\_1` directory.
+After you are done editing, change directories back to the main `6315_1` directory and enter these commands to unmount the image.
 
 
 
 ```bash
 
-\# Re-zip the 6315\_1 directory. Make sure you are running this inside of the 6315\_1 directory.
+# Unmount the .img and remove the img_mount_dir directory
 
-sudo zip -r ../6315\_12.zip \*
+sudo umount img_mount_dir
+
+rm -rf img_mount_dir
+
+```
 
 
 
-\# The reason we named it 6315\_12.zip is so that we know which one is signed and which one is not signed in the future.
+### Recompressing and Signing
 
 
 
-\# Remove the old directory.
+After this has been done, you will need to recompress the directory and sign it using the `signapk.jar` from Techexpertize. As far as I'm aware, the ATOTO is only looking for *something* to be there as some sort of a signature, so it shouldn't need to be anything crazy. 
 
-sudo rm -rf 6315\_1
+
+
+First, you will need to re-zip the `6315_1` directory.
+
+
+
+```bash
+
+# Re-zip the 6315_1 directory. Make sure you are running this inside of the 6315_1 directory.
+
+sudo zip -r ../6315_12.zip *
+
+
+
+# The reason we named it 6315_12.zip is so that we know which one is signed and which one is not signed in the future.
+
+
+
+# Remove the old directory.
+
+sudo rm -rf 6315_1
 
 ```
 
@@ -260,15 +258,15 @@ Now that we have the unsigned zip, move it to the same directory as the `signapk
 
 ```bash
 
-\# Sign the zip.
+# Sign the zip.
 
-java -jar signapk.jar 6315\_12.zip 6315\_1.zip
+java -jar signapk.jar 6315\_12.zip 6315_1.zip
 
 
 
-\# Remove the old unsigned zip.
+# Remove the old unsigned zip.
 
-rm 6315\_12.zip
+rm 6315_12.zip
 
 ```
 
