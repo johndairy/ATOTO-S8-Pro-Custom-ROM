@@ -100,7 +100,7 @@ After that, you should be ready to start!
 
 
 
-To add or remove apps to the preinstall list, you can do so easily in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unauthorized unzipping. Fortunately, due to the incredible work of [Eliminater74](https://github.com/Eliminater74/atoto_firmware_downloader), I was able to extract the password to the file.
+To add or remove apps to the preinstall list, you can do so easily in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unauthorized unzipping. Fortunately, due to the incredible work of [Eliminater74](https://github.com/Eliminater74/atoto_firmware_downloader), I was able to extract the password to the file, as well as decompress the official update `.img`s.
 
 
 
