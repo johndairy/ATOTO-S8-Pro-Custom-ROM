@@ -1,4 +1,4 @@
-\# ATOTO S8 Pro Custom ROM/Update
+# ATOTO S8 Pro Custom ROM/Update
 
 
 
