@@ -1,16 +1,16 @@
-# ATOTO S8 Pro Custom ROM/Update
+# ATOTO S8 Pro Custom ROM Install Instructions
 
 
 
 Welcome!
 
+Thanks to the long hours spent by [Shunhax](https://xdaforums.com/t/rooting-atoto-s8-premium-gen2-head-units.4737904/) to find out how to gain access to root!
 
-
-> **DISCLAIMER!!!** This is NOT an official update, nor is it endorsed or anyhow affiliated with ATOTO. While flashing this update is considered stable from my tests, it is not guaranteed to work for everyone. These risks must be considered! I am not liable for any damage done to your device!
+> DISCLAIMER!!! This is NOT an official update, nor is it endorsed or anyhow affiliated with ATOTO. While flashing this update is considered stable from my tests, it is not guaranteed to work for everyone. These risks must be considered! I am not liable for any damage done to your device!
 
 > 
 
-> **If you agree to the above statements, proceed.**
+> If you agree to the above statements, proceed.
 
 
 
@@ -22,7 +22,7 @@ Welcome!
 
 
 
-**Step 2:** Grab a 32GB microSD card formatted as FAT32, and copy those three files to the root of the card.
+**Step 2:** Grab at most a 32GB microSD card formatted as FAT32, and copy those three files to the root of the card.
 
 
 
@@ -100,7 +100,7 @@ After that, you should be ready to start!
 
 
 
-To add or remove apps to the preinstall list, you will find that in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unzipping. Fortunately, due to the incredible work of [Eliminater74](https://github.com/Eliminater74/atoto_firmware_downloader), I was able to extract the password to the file.
+To add or remove apps to the preinstall list, you can do so easily in the `AllAppUpdate.bin` file. This file is essentially a zero-compression zip file with a password-protected lock preventing unauthorized unzipping. Fortunately, due to the incredible work of [Eliminater74](https://github.com/Eliminater74/atoto_firmware_downloader), I was able to extract the password to the file.
 
 
 
